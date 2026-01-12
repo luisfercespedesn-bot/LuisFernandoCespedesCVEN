@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luis F. Cespedes | Automation Engineer & International Business</title>
+
+    <!-- FAVICON: Encoded SVG for maximum compatibility -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='4' y='4' width='16' height='16' rx='2' ry='2'%3E%3C/rect%3E%3Crect x='9' y='9' width='6' height='6'%3E%3C/rect%3E%3Cline x1='9' y1='1' x2='9' y1='4'%3E%3C/line%3E%3Cline x1='15' y1='1' x2='15' y1='4'%3E%3C/line%3E%3Cline x1='9' y1='20' x2='9' y2='23'%3E%3C/line%3E%3Cline x1='15' y1='20' x2='15' y2='23'%3E%3C/line%3E%3Cline x1='20' y1='9' x2='23' y1='9'%3E%3C/line%3E%3Cline x1='20' y1='15' x2='23' y1='15'%3E%3C/line%3E%3Cline x1='1' y1='9' x2='4' y1='9'%3E%3C/line%3E%3Cline x1='1' y1='15' x2='4' y1='15'%3E%3C/line%3E%3C/svg%3E">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body { font-family: 'Inter', sans-serif; scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
+        .glass-card { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s ease-out; }
+        .reveal.active { opacity: 1; transform: translateY(0); }
+        .skill-tag { background: rgba(59, 130, 246, 0.1); color: #60a5fa; padding: 4px 12px; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; border: 1px solid rgba(59, 130, 246, 0.2); }
+        .timeline-item::before { content: ''; position: absolute; left: -9px; top: 5px; width: 18px; height: 18px; border-radius: 50%; background: #3b82f6; border: 4px solid #f8fafc; z-index: 10; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 font-bold text-2xl text-blue-600">LFC<span class="text-slate-400">.</span></div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-slate-600 hover:text-blue-600 px-3 py-2 font-medium">Home</a>
+                        <a href="#experience" class="text-slate-600 hover:text-blue-600 px-3 py-2 font-medium">Experience</a>
+                        <a href="#skills" class="text-slate-600 hover:text-blue-600 px-3 py-2 font-medium">Skills</a>
+                        <a href="#education" class="text-slate-600 hover:text-blue-600 px-3 py-2 font-medium">Education</a>
+                        <a href="#contact" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition shadow-lg shadow-blue-200">Contact</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient min-h-screen flex items-center pt-20 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-12 items-center">
+            <div class="reveal">
+                <div class="inline-block px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-bold mb-4 uppercase tracking-widest">
+                    Automation Engineer & International Business
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold leading-tight">Luis F. <br><span class="text-blue-500">Cespedes</span></h1>
+                <p class="mt-6 text-xl text-slate-400 max-w-lg leading-relaxed text-justify">
+                    Engineer specialized in the intersection of industrial technology and global strategy. Expert in transforming processes through automation, data, and international market vision.
+                </p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="Resume_ES_amz.pdf" download class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold flex items-center gap-2 transition shadow-lg shadow-blue-900/20">
+                        Download CV <i data-lucide="download" class="w-5 h-5"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/luis-f-cespedes-a24466201" target="_blank" class="border border-slate-700 hover:bg-slate-800 text-white px-8 py-3 rounded-lg font-semibold flex items-center gap-2 transition">
+                        LinkedIn <i data-lucide="linkedin" class="w-5 h-5"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="relative hidden md:block reveal">
+                <div class="glass-card p-8 rounded-2xl relative z-10 border border-white/10 shadow-2xl">
+                    <div class="flex items-center gap-4 mb-6"><div class="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div><span class="text-sm font-mono text-blue-400 italic">SYSTEM_STATUS: OPERATIONAL</span></div>
+                    <div class="space-y-3 font-mono text-sm text-slate-300">
+                        <p class="flex justify-between border-b border-white/5 pb-1"><span>> PLC Siemens / TIA Portal</span> <span class="text-blue-400">Expert</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-1"><span>> ABB RobotStudio</span> <span class="text-blue-400">Advanced</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-1"><span>> SQL Data Management</span> <span class="text-green-400">Certified</span></p>
+                        <p class="flex justify-between border-b border-white/5 pb-1"><span>> Global Market Analysis</span> <span class="text-green-400">Expert</span></p>
+                        <p class="flex justify-between"><span>> Amazon FBA Strategy</span> <span class="text-blue-400">Strategic</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section id="experience" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-slate-900">Professional Background</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="relative border-l-2 border-slate-200 ml-4 md:ml-0 md:pl-8 space-y-12">
+                
+                <!-- Amazon Seller -->
+                <div class="timeline-item relative pl-8 reveal">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 hover:shadow-md transition-shadow">
+                        <div class="md:w-1/4">
+                            <span class="text-blue-600 font-bold text-lg">Jun 2022 — Jun 2025</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-900">Amazon Seller</h3>
+                            <p class="text-slate-500 font-medium">Amazon Central & Global Trade</p>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                                Comprehensive management of private label brand under the Amazon FBA model. Led the full business cycle: from international market analysis and global supplier selection to complex logistics management (import/export). Developed high-performance marketing and PPC advertising strategies.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Global Logistics Management</span>
+                                <span class="skill-tag">PPC Advertising</span>
+                                <span class="skill-tag">Import/Export</span>
+                                <span class="skill-tag">Market Analysis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ROVI -->
+                <div class="timeline-item relative pl-8 reveal">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 hover:shadow-md transition-shadow">
+                        <div class="md:w-1/4">
+                            <span class="text-blue-600 font-bold text-lg">Dec 2022 — May 2023</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-900">Process Engineer</h3>
+                            <p class="text-slate-500 font-medium">Laboratorios ROVI (Pharma)</p>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                                Mid-level management in the Automation QA department. Ensured compliance with GMP regulations in pharmaceutical processes. System validation, technical documentation, and production line optimization to improve preventive maintenance efficiency.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Middle Management</span>
+                                <span class="skill-tag">GMP Regulations</span>
+                                <span class="skill-tag">Automation QA</span>
+                                <span class="skill-tag">Pharma Industry</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Entrerríos -->
+                <div class="timeline-item relative pl-8 reveal">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 hover:shadow-md transition-shadow">
+                        <div class="md:w-1/4">
+                            <span class="text-blue-600 font-bold text-lg">Feb 2019 — Sep 2022</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-900">Project Engineer</h3>
+                            <p class="text-slate-500 font-medium">Entrerríos Automatización</p>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                                Engineering for Renault, Opel, and Volkswagen plants. Advanced PLC programming (Siemens S7-1500, TIA Portal), computer vision systems configuration (Cognex), and robotics (ABB). Design using E-Plan P8 and leadership in commissioning.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Siemens TIA Portal</span>
+                                <span class="skill-tag">ABB RobotStudio</span>
+                                <span class="skill-tag">E-Plan P8</span>
+                                <span class="skill-tag">Computer Vision</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GMP S.L. -->
+                <div class="timeline-item relative pl-8 reveal">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 hover:shadow-md transition-shadow">
+                        <div class="md:w-1/4">
+                            <span class="text-blue-600 font-bold text-lg">Jan 2017 — Apr 2019</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-900">Programming Technician</h3>
+                            <p class="text-slate-500 font-medium">GMP S.L. Desarrollo</p>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                                Specialist in industrial programming and automation. Led project development from planning to execution, including commissioning across various sectors. Expert in PLC programming languages, Robots (ABB, Yaskawa), HMI, and SCADA. Implemented process traceability monitoring systems via databases and coordinated continuous improvement strategies to maximize overall productivity.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">PLC & HMI</span>
+                                <span class="skill-tag">DB Traceability</span>
+                                <span class="skill-tag">Industrial Protocols</span>
+                                <span class="skill-tag">Continuous Improvement</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kongsberg -->
+                <div class="timeline-item relative pl-8 reveal">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 hover:shadow-md transition-shadow">
+                        <div class="md:w-1/4">
+                            <span class="text-blue-600 font-bold text-lg">Oct 2015 — Oct 2016</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-900">Process Technician</h3>
+                            <p class="text-slate-500 font-medium">Kongsberg Automotive</p>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                                Specialist in electromechanical maintenance of automated industrial systems. Responsible for the technical operability of automotive component production lines. Execution of complex diagnostics and fault resolution.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Corrective Maintenance</span>
+                                <span class="skill-tag">Electromechanics</span>
+                                <span class="skill-tag">Automotive</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IVECO -->
+                <div class="timeline-item relative pl-8 reveal">
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100 flex flex-col md:flex-row gap-8 hover:shadow-md transition-shadow">
+                        <div class="md:w-1/4">
+                            <span class="text-blue-600 font-bold text-lg">May 2014 — May 2015</span>
+                            <h3 class="text-xl font-bold mt-1 text-slate-900">Process Technician (Dual VET)</h3>
+                            <p class="text-slate-500 font-medium">IVECO España</p>
+                        </div>
+                        <div class="md:w-3/4">
+                            <p class="text-slate-600 leading-relaxed mb-4 text-justify">
+                                Technical immersion in the assembly operations unit. Participation in heavy vehicle assembly, mechanical adjustment, wiring, and electronic diagnosis under the Dual Vocational Education and Training model.
+                            </p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="skill-tag">Dual VET</span>
+                                <span class="skill-tag">Industrial Assembly</span>
+                                <span class="skill-tag">Electronic Systems</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Skills -->
+    <section id="skills" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-slate-900">Technical Competencies</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- PLC -->
+                <div class="reveal group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="cpu" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Control & Engineering</h4>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Siemens S7-1500 & TIA Portal</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Omron Systems & WinCC</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Protocols: Profinet, Ethercat</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Electrical Design E-Plan P8</li>
+                    </ul>
+                </div>
+                <!-- Robotics -->
+                <div class="reveal group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="bot" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Robotics & QA</h4>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> ABB RobotStudio & Yaskawa</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Vision: Cognex & Keyence</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> GMP Compliance</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> QA in Pharma Industry</li>
+                    </ul>
+                </div>
+                <!-- IT -->
+                <div class="reveal group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="database" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Data & Industrial IT</h4>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> SQL Server (SSMS)</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Industrial Networks</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Process Traceability</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Data Analysis</li>
+                    </ul>
+                </div>
+                <!-- Business -->
+                <div class="reveal group">
+                    <div class="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300">
+                        <i data-lucide="trending-up" class="w-8 h-8"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-3">Business & Leadership</h4>
+                    <ul class="text-xs space-y-2 text-slate-500">
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Amazon Seller Central & FBA</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Import / Export Management</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Team Management</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-3 h-3 text-blue-500"></i> Market Strategy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <h2 class="text-4xl font-bold text-slate-900">Academic Education</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto mt-4"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <span class="text-blue-600 font-bold text-xs uppercase">2016 — 2020</span>
+                    <h4 class="text-lg font-bold mt-2">Bachelor's Degree in IT Engineering</h4>
+                    <p class="text-slate-500 text-sm italic">U.N.E.D. -  Spain</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <span class="text-blue-600 font-bold text-xs uppercase">2015 — 2016</span>
+                    <h4 class="text-lg font-bold mt-2">Master's Degree in Industrial Automation</h4>
+                    <p class="text-slate-500 text-sm italic">San Jorge University - Zaragoza, Spain</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <span class="text-blue-600 font-bold text-xs uppercase">2013 — 2015</span>
+                    <h4 class="text-lg font-bold mt-2">Higher VET: Industrial Electronics</h4>
+                    <p class="text-slate-500 text-sm italic">I.E.S. La Merced - Valladolid, Spain</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-sm reveal">
+                    <span class="text-blue-600 font-bold text-xs uppercase">2011 — 2013</span>
+                    <h4 class="text-lg font-bold mt-2">Higher VET: Building Automation & Domotics</h4>
+                    <p class="text-slate-500 text-sm italic">I.E.S. La Merced - Valladolid, Spain</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <footer id="contact" class="bg-slate-900 text-white py-24">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h2 class="text-4xl font-bold mb-4 reveal">Let's Connect</h2>
+            <p class="text-xl text-blue-400 font-medium mb-10 reveal italic">
+                Available to lead strategic projects in automation or global business development.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 reveal mb-10">
+                <a href="mailto:luisfer.cespedesn@gmail.com" class="flex items-center gap-3 px-6 py-4 bg-white/5 hover:bg-white/10 rounded-2xl transition border border-white/10 w-full sm:w-auto justify-center">
+                    <i data-lucide="mail" class="text-blue-500 w-6 h-6"></i>
+                    <span class="text-sm font-semibold">luisfer.cespedesn@gmail.com</span>
+                </a>
+                <a href="https://www.linkedin.com/in/luis-f-cespedes-a24466201" target="_blank" class="flex items-center gap-3 px-6 py-4 bg-white/5 hover:bg-white/10 rounded-2xl transition border border-white/10 w-full sm:w-auto justify-center">
+                    <i data-lucide="linkedin" class="text-blue-500 w-6 h-6"></i>
+                    <span class="text-sm font-semibold">LinkedIn Profile</span>
+                </a>
+            </div>
+            <div class="reveal">
+                <a href="Resume_ES_amz.pdf" download class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold transition shadow-lg shadow-blue-900/40 transform hover:-translate-y-1">
+                    Download CV <i data-lucide="download" class="w-5 h-5"></i>
+                </a>
+            </div>
+            <div class="mt-20 pt-8 border-t border-white/5 text-slate-500 text-xs tracking-wider text-center">
+                <p>&copy; 2026 Luis F. Cespedes |  Spain.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        function reveal() {
+            const reveals = document.querySelectorAll(".reveal");
+            const windowHeight = window.innerHeight;
+            reveals.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 80) element.classList.add("active");
+            });
+        }
+        window.addEventListener("scroll", reveal);
+        window.addEventListener("load", reveal);
+        reveal();
+    </script>
+</body>
+</html>
